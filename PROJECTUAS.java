@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 public class PROJECTUAS {
 
-    // =====================================================================
-    // STRUKTUR DATA: Record/Array manual (tanpa ArrayList/LinkedList)
-    // =====================================================================
+    // struktur data (record/array manual)
 
     static final int MAX = 100;
 
@@ -25,38 +23,36 @@ public class PROJECTUAS {
 
     static Scanner sc = new Scanner(System.in);
 
-    // =====================================================================
-    // MAIN MENU
-    // =====================================================================
+    // Main menu
 
     public static void main(String[] args) {
-        // Isi data awal supaya langsung bisa dicoba
+        // Isi data awal 
         initDataAwal();
 
         int pilihan;
         do {
-            System.out.println("\n╔══════════════════════════════════════════════╗");
-            System.out.println("║     SISTEM MANAJEMEN STOK TOKO ELEKTRONIK    ║");
-            System.out.println("╠══════════════════════════════════════════════╣");
-            System.out.println("║  [CRUD]                                      ║");
-            System.out.println("║  1. Tambah Produk Baru                       ║");
-            System.out.println("║  2. Tampilkan Semua Produk                   ║");
-            System.out.println("║  3. Edit Produk (berdasarkan ID)             ║");
-            System.out.println("║  4. Hapus Produk (Soft Delete)               ║");
-            System.out.println("║  5. Lihat Log Penghapusan                    ║");
-            System.out.println("╠══════════════════════════════════════════════╣");
-            System.out.println("║  [SEARCHING]                                 ║");
-            System.out.println("║  6. Cari berdasarkan Nama (Linear Search)    ║");
-            System.out.println("║  7. Cari berdasarkan ID   (Binary Search)    ║");
-            System.out.println("║  8. Cari berdasarkan Kategori                ║");
-            System.out.println("╠══════════════════════════════════════════════╣");
-            System.out.println("║  [SORTING]                                   ║");
-            System.out.println("║  9.  Urutkan ID Ascending  (Bubble Sort)     ║");
-            System.out.println("║  10. Urutkan Nama A-Z      (Selection Sort)  ║");
-            System.out.println("║  11. Urutkan Stok Terbanyak (Descending)     ║");
-            System.out.println("╠══════════════════════════════════════════════╣");
-            System.out.println("║  0. Keluar                                   ║");
-            System.out.println("╚══════════════════════════════════════════════╝");
+            System.out.println("\n|----------------------------------------------|");
+            System.out.println("|     SISTEM MANAJEMEN STOK TOKO ELEKTRONIK    |");
+            System.out.println("|----------------------------------------------|");
+            System.out.println("|  [CRUD]                                      |");
+            System.out.println("|  1. Tambah Produk Baru                       |");
+            System.out.println("|  2. Tampilkan Semua Produk                   |");
+            System.out.println("|  3. Edit Produk (berdasarkan ID)             |");
+            System.out.println("|  4. Hapus Produk (Soft Delete)               |");
+            System.out.println("|  5. Lihat Log Penghapusan                    |");
+            System.out.println("|----------------------------------------------|");
+            System.out.println("|  [SEARCHING]                                 |");
+            System.out.println("|  6. Cari berdasarkan Nama (Linear Search)    |");
+            System.out.println("|  7. Cari berdasarkan ID   (Binary Search)    |");
+            System.out.println("|  8. Cari berdasarkan Kategori                |");
+            System.out.println("|----------------------------------------------|");
+            System.out.println("|  [SORTING]                                   |");
+            System.out.println("|  9.  Urutkan ID Ascending  (Bubble Sort)     |");
+            System.out.println("|  10. Urutkan Nama A-Z      (Selection Sort)  |");
+            System.out.println("|  11. Urutkan Stok Terbanyak (Descending)     |");
+            System.out.println("|----------------------------------------------|");
+            System.out.println("|  0. Keluar                                   |");
+            System.out.println("|----------------------------------------------|");
             System.out.print("  Pilih menu: ");
             pilihan = sc.nextInt();
             sc.nextLine();
