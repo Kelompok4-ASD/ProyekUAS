@@ -30,6 +30,9 @@ public class Main {
             System.out.println("|  10. Urutkan Nama A-Z      (Selection Sort)  |");
             System.out.println("|  11. Urutkan Stok Terbanyak (Insertion Sort) |");
             System.out.println("|==============================================|");
+            System.out.println("|  [STATISTIK]                                 |");
+            System.out.println("|  12. Tampilkan Statistik Data                |");
+            System.out.println("|==============================================|");
             System.out.println("|  0. Keluar                                   |");
             System.out.println("|==============================================|");
             System.out.print("  Pilih menu: ");
@@ -37,20 +40,21 @@ public class Main {
             sc.nextLine();
 
             switch (pilihan) {
-                case 1:  StokManager.tambah();          break;
+                case 1:  StokManager.tambah();  break;
                 case 2:  StokManager.tampilkanSemua();  break;
-                case 3:  StokManager.edit();            break;
-                case 4:  StokManager.hapus();           break;
-                case 5:  StokManager.lihatLog();        break;
-                case 6:  SearchService.cariNama();      break;
-                case 7:  SearchService.cariId();        break;
+                case 3:  StokManager.edit();  break;
+                case 4:  StokManager.hapus(); break;
+                case 5:  StokManager.lihatLog(); break;
+                case 6:  SearchService.cariNama(); break;
+                case 7:  SearchService.cariId(); break;
                 case 8:  SearchService.cariKategori();  break;
-                case 9:  SortService.sortById();        break;
-                case 10: SortService.sortByNama();      break;
-                case 11: SortService.sortByStok();      break;
+                case 9:  SortService.sortById(); break;
+                case 10: SortService.sortByNama(); break;
+                case 11: SortService.sortByStok(); break;
+                case 12: StatistikService.tampilkanStatistik(); break;
                 case 0:  System.out.println("\n  Terima kasih! Program selesai."); break;
                 default: System.out.println("\n  [!] Pilihan tidak valid.");
             }
         } while (pilihan != 0);
     }
-}
+}s
