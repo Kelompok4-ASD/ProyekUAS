@@ -33,13 +33,11 @@ public class Main {
            System.out.println("|==============================================|");
            System.out.println("|  [FILE]                                      |");
            System.out.println("|  13. Load Data dari File                     |");
-           System.out.println("|  14. Simpan Data ke File                     |");
            System.out.println("|  0. Keluar                                   |");
            System.out.println("|==============================================|");
            System.out.print("  Pilih menu: ");
            pilihan = sc.nextInt();
            sc.nextLine();
-
 
            switch (pilihan) {
                case 1:  StokManager.tambah();  break;
